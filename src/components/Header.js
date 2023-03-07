@@ -7,7 +7,7 @@ const Header = () => {
     const location = useLocation();
 
     useEffect(() => {
-        location.pathname == '/' ? document.body.className = "home" : document.body.className = location.pathname.replace(/\//g,'');
+        location.pathname === '/' ? document.body.className = "home" : document.body.className = location.pathname.replace(/\//g,'');
         return () => { document.body.className = false }
       }, [location.pathname])
     return(
