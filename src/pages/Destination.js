@@ -10,8 +10,8 @@ const Destination = ({destinations}) => {
        <main className="grid-container grid-container--destination flow">
             <h1 className="numbered-title"><span className="text-grey">01</span>pick your destination</h1>
             <picture>
-                <source srcset={planet.images.webp} type="image/webp" />
-                <img src="/public/assets/destination/image-europa.png" alt={"The "+planet.name} />
+                <source srcset={`${process.env.PUBLIC_URL+planet.images.png.substring(1)}`} type="image/webp" />
+                <img src={`${process.env.PUBLIC_URL+planet.images.png.substring(1)}`} alt={"The "+planet.name} />
             </picture> 
             <div className="tab-list underline-indicators flex">
             {

@@ -24,8 +24,8 @@ const Technology = ( {technology} ) => {
                 <p>{ vehicle.description }</p>
             </article>
             <picture>
-                <source media="(min-width: 45rem)" srcset={vehicle.images.portrait}/>
-                <img src={vehicle.images.landscape} alt="cat"/>
+                <source media="(min-width: 45rem)" srcset={`${process.env.PUBLIC_URL+vehicle.images.portrait.substring(1)}`}/>
+                <img src={`${process.env.PUBLIC_URL+vehicle.images.landscape.substring(1)}`} alt="cat"/>
             </picture> 
         </main>
     )

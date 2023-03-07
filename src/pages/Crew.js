@@ -24,8 +24,8 @@ const Crew = ( {crew} ) => {
                <p>{ member.bio }</p>
             </article>
             <picture>
-                <source srcset={member.images.webp} type="image/webp" />
-                <img src={member.images.png} alt={"The "+member.name} />
+                <source srcset={`${process.env.PUBLIC_URL+member.images.png.substring(1)}`} type="image/webp" />
+                <img src={`${process.env.PUBLIC_URL+member.images.png.substring(1)}`} alt={"The "+member.name} />
             </picture> 
         </main>
     )
