@@ -11,7 +11,7 @@ const Destination = ({destinations}) => {
             <h1 className="numbered-title"><span className="text-grey">01</span>pick your destination</h1>
             <picture>
                 <source srcset={planet.images.webp} type="image/webp" />
-                <img src={planet.images.png} alt={"The "+planet.name} />
+                <img src="/public/assets/destination/image-europa.png" alt={"The "+planet.name} />
             </picture> 
             <div className="tab-list underline-indicators flex">
             {
