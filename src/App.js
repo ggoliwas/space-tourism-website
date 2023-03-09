@@ -15,13 +15,14 @@ import "./main.css"
 const App = () => {
    
     return(
-    <>
+    <>   
     <Header/>
     <Routes>
-        <Route path="/space-tourism-website" element={<Home/>}/>
-        <Route path="/destination" element={<Destination destinations={data.destinations} />} />
-        <Route path="/crew" element={<Crew crew={data.crew} />}/>
-        <Route path="/technology" element={<Technology technology={data.technology} />} />
+      <Route exact path="/" element={<Home/>}/>
+      <Route exact path="/space-tourism-website" element={<Home/>}/>
+      <Route path="/destination" element={<Destination destinations={data.destinations} />} />
+      <Route path="/crew" element={<Crew crew={data.crew} />}/>
+      <Route path="/technology" element={<Technology technology={data.technology} />} />
     </Routes>
     </>
   )
