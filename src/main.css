@@ -46,6 +46,9 @@ picture {
 	max-width: 100%;
 }
 
+ul, li { list-style: none;}
+
+
 button { background-color: transparent; cursor: pointer;}
 
 :root {
