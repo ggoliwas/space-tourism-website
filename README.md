@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/ggoliwas/product-preview-card-component-main)
-- Live Site URL: [Live demo](https://ggoliwas.github.io/product-preview-card-component-main/)
+- Solution URL: [Github](https://github.com/ggoliwas/space-tourism-website)
+- Live Site URL: [Live demo](https://ggoliwas.github.io/space-tourism-website/)
 
 ## My process
 
